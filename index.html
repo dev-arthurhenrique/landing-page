@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça a Barbearia Black Gold. Cortes modernos,
+        barba e atendimento personalizado. Agende seu horário!">
+
+    <title>Black Gold | Barbearia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                BLACK<span>GOLD</span>
+                <small>BARBEARIA</small>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <a href="#agendamento" class="btn btn-small">
+                Agendar horário
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="nav"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="eyebrow">
+                    ESTILO • PERSONALIDADE • TRADIÇÃO
+                </span>
+
+                <h1>
+                    SEU ESTILO.<br>
+                    SUAS <span>REGRAS.</span>
+                </h1>
+
+                <p>
+                    Muito mais que um corte. Uma experiência feita
+                    para quem valoriza presença, confiança e estilo.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#agendamento" class="btn">
+                        Agende seu horário
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#servicos" class="btn btn-outline">
+                        Conheça os serviços
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>01</strong>
+                        <span>Atendimento personalizado</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Profissionais especializados</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Seu estilo em primeiro lugar</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="section services" id="servicos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Nosso <span>serviço</span></h2>
+                    <p>
+                        Cuidado em cada detalhe para você sair
+                        daqui com outra presença.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=85"
+                            alt="Barbeiro realizando um corte de cabelo"
+                            loading="lazy"
+                        >
+
+                        <div class="service-content">
+                            <span class="service-number">01 / CORTE</span>
+                            <h3>Corte masculino</h3>
+                            <p>
+                                Do clássico ao moderno, com acabamento
+                                pensado para combinar com você.
+                            </p>
+
+                            <div class="service-footer">
+                                <strong>R$ 40,00</strong>
+                                <a href="#agendamento"
+                                    aria-label="Agendar corte masculino">
+                                    ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=85"
+                            alt="Detalhes de um serviço profissional de barbearia"
+                            loading="lazy"
+                        >
+
+                        <div class="service-content">
+                            <span class="service-number">02 / BARBA</span>
+                            <h3>Barba na régua</h3>
+                            <p>
+                                Modelagem, alinhamento e cuidado
+                                para deixar sua barba impecável.
+                            </p>
+
+                            <div class="service-footer">
+                                <strong>R$ 25,00</strong>
+                                <a href="#agendamento"
+                                    aria-label="Agendar barba">
+                                    ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85"
+                            alt="Ambiente de uma barbearia moderna"
+                            loading="lazy"
+                        >
+
+                        <div class="service-content">
+                            <span class="service-number">03 / COMBO</span>
+                            <h3>Corte + barba</h3>
+                            <p>
+                                A combinação completa para renovar
+                                o visual e cuidar de cada detalhe.
+                            </p>
+
+                            <div class="service-footer">
+                                <strong>R$ 60,00</strong>
+                                <a href="#agendamento"
+                                    aria-label="Agendar corte e barba">
+                                    ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="price-note">
+                    * Valores ilustrativos. Ajuste conforme os
+                    preços reais da sua barbearia.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- AVALIAÇÕES -->
+         
+        <section class="section avaliacoes" id="avaliacoes">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Avaliações dos <span>Clientes</span></h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <img src="imagens/img-avaliacao1.jpg" alt="imagem-avaliacao1">
+
+                        <div class="service-content">
+                            <h3>CLIENTE X</h3>
+                            <p>
+                                Amei o espaço, mas principalmente o atendimento.
+                            </p>
+
+                        </div>
+
+                    </article>
+                    <article class="service-card">
+
+                        <img src="imagens/img-avaliacao3.jpg" alt="imagem-avaliacao1">
+
+                        <div class="service-content">
+                            <h3>CLIENTE Y</h3>
+                            <p>
+                                Achei o preço justo. Adorei a criatividade e o trabalho feito aqui
+                            </p>
+
+                        </div>
+                        
+                    </article>
+                    <article class="service-card">
+
+                        <img src="imagens/img-avaliacao4.jpg" alt="imagem-avaliacao1">
+
+                        <div class="service-content">
+                            <h3>CLIENTE X</h3>
+                            <p>
+                                Amei o espaço, mas principalmente o atendimento.
+                            </p>
+
+                        </div>
+                        
+                    </article>
+                </div>
+                
+            </div>
+
+
+        </section>
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=85"
+                        alt="Profissional barbeiro trabalhando"
+                        loading="lazy"
+                    >
+
+                    <div class="image-label">
+                        <span>BLACK GOLD</span>
+                        <small>Seu estilo começa aqui.</small>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">NOSSA ESSÊNCIA</span>
+
+                    <h2>
+                        Mais que um corte.<br>
+                        Uma <span>identidade.</span>
+                    </h2>
+
+                    <p>
+                        Acreditamos que o cuidado pessoal vai além
+                        da aparência. É sobre se sentir bem,
+                        expressar sua personalidade e sair com
+                        a confiança renovada.
+                    </p>
+
+                    <p>
+                        Unimos técnica, atenção aos detalhes e um
+                        ambiente acolhedor para entregar uma
+                        experiência à altura do seu estilo.
+                    </p>
+
+                    <a href="#agendamento" class="btn">
+                        Venha nos conhecer ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA -->
+        <section class="cta">
+            <div class="container cta-content">
+                <span class="eyebrow">SEU PRÓXIMO VISUAL COMEÇA AQUI</span>
+                <h2>Está na hora de renovar.</h2>
+                <p>
+                    Reserve seu horário e deixe o resto com a gente.
+                </p>
+                <a href="#agendamento" class="btn">
+                    Quero agendar
+                </a>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="section location" id="localizacao">
+            <div class="container location-grid">
+
+                <div class="location-content">
+                    <h2>Encontre nossa <span>barbearia.</span></h2>
+
+                    <div class="location-item">
+                        <span class="location-icon">⌖</span>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>
+                                Rua Exemplo, 123<br>
+                                Centro — Sua cidade, UF
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-icon">◷</span>
+                        <div>
+                            <h3>Horário de funcionamento</h3>
+                            <p>
+                                Segunda a sábado<br>
+                                Das 9h às 19h
+                            </p>
+                        </div>
+                    </div>
+
+                    <a
+                        class="btn"
+                        href="https://www.google.com/maps/search/?api=1&query=barbearia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Como chegar ↗
+                    </a>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=barbearia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        title="Mapa da localização da barbearia"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AGENDAMENTO -->
+        <section class="section booking" id="agendamento">
+            <div class="container booking-grid">
+
+                <div class="booking-intro">
+                    <span class="eyebrow">VAMOS MARCAR?</span>
+                    <h2>Seu horário.<br><span>Seu momento.</span></h2>
+
+                    <p>
+                        Preencha os dados ao lado. Vamos abrir
+                        uma conversa no WhatsApp com as informações
+                        do seu agendamento.
+                    </p>
+
+                    <div class="booking-contact">
+                        <span>✳</span>
+                        <p>
+                            <strong>Simples e rápido.</strong><br>
+                            Confirme seu horário diretamente conosco.
+                        </p>
+                    </div>
+                </div>
+
+                <form id="booking-form" class="booking-form">
+
+                    <div class="form-heading">
+                        <h3>Agende seu atendimento</h3>
+                        <p>Preencha os campos abaixo.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Seu nome</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Como podemos te chamar?"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Serviço</label>
+                            <select id="service" name="service" required>
+                                <option value="">Escolha um serviço</option>
+                                <option value="Corte masculino">
+                                    Corte masculino
+                                </option>
+                                <option value="Barba na régua">
+                                    Barba na régua
+                                </option>
+                                <option value="Corte + barba">
+                                    Corte + barba
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Data desejada</label>
+                            <input
+                                type="date"
+                                id="date"
+                                name="date"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Horário desejado</label>
+                        <select id="time" name="time" required>
+                            <option value="">Escolha um horário</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            Observações <span>(opcional)</span>
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="3"
+                            placeholder="Alguma preferência ou detalhe?"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">
+                        Solicitar pelo WhatsApp ↗
+                    </button>
+
+                    <p class="form-note">
+                        O horário só estará confirmado após
+                        a resposta da barbearia.
+                    </p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#inicio" class="logo">
+                BLACK<span>GOLD</span>
+                <small>BARBEARIA</small>
+            </a>
+
+            <p>Estilo que fala por você.</p>
+
+            <span class="copyright">
+                © <span id="year"></span> Black Gold.
+                Todos os direitos reservados.
+            </span>
+
+        </div>
+    </footer>
+
+</body>
+</html>

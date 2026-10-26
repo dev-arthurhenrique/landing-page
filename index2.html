@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="text" id="nome">
+    <input type="email" id="email">
+    <button id="botao">WhatsApp</button>
+  </form>  
+
+  <script>
+    
+
+    
+    const botao = document.getElementById('botao')
+    botao.addEventListener('click', () => {
+
+        const nome = document.getElementById('nome').value
+        const email = document.getElementById('email').value
+        const numero = '5582996355177'
+        const MensagemWhatsApp = `
+         Olá! Meu nome é ${nome}.
+         e meu email é: ${email}
+         `
+        const mensagemCodificada = encodeURIComponent(MensagemWhatsApp)
+        const url = `https://wa.me/${numero}?text=${mensagemCodificada}`
+
+        window.open(url, '_blank')
+    })
+    
+  </script>
+</body>
+</html>
